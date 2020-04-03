@@ -47,3 +47,12 @@ li {
 .nav-link:active {
     color: rgb(255, 195, 105);
 }
+
+p {
+    color: whitesmoke;
+
+}
+
+pre {
+    color: whitesmoke;
+}
