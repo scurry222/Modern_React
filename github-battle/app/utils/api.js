@@ -4,9 +4,8 @@ export function fetchPopularRepos (language) {
     return fetch(endpoint)
     .then((res) => res.json())
     .then((data) => {
-        if (!data.items) {
-            throw new Error(data.message)
-        }
+        if (!data.items) throw new Error(data.message)
+
         return data.items
     })
 }
