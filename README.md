@@ -1,10 +1,5 @@
-# Modern_React
+# Modern React
 
-How to run:
-*git clone* this repo
+Welcome to my Hub for all things React!
 
-in project directory, run *npm install*
-
-*npm run build*
-
-Then, open file location of html file in *dist* to open
+This is my collection of knowledge on React for all reference, practice, and training purposes.
