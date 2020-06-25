@@ -1,16 +1,16 @@
 # Forms in React: Controlled vs Uncontrolled Components
 
-## Define
+## Controlled Components
 
 **Controlled components** are when you do things the "React way"... keeping state in react components. **Uncontrolled components** are when you hold the state in the DOM, or the "historic stone-age way".
 
 
-## Conceptual Example
+### Conceptual Example
 
 Usually, when dealing with form state of the *input* field, you would just get it from the DOM. But if you do it through **controlled components**, the form state **is** the component's state, so the *input field* value is the component state's value.
 
 
-## Actual Example
+### Actual Example
 
 
 ```
@@ -51,4 +51,11 @@ class Form extends React.Component {
 }
 ```
 
-The line *this.state.email* is how we grab
+The line `this.state.email` is how we grab the state in a controlled component. Since we're setting it to the `value` field in the `input`, we're basically letting React control what the value is.
+
+
+
+## Uncontrolled Components
+
+
+What we can do instead of having React control the value, is have it live inside the DOM. React has a method called `createRef` that can make a DOM node for the `input` that is accessable.

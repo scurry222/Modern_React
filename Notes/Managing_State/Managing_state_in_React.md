@@ -40,7 +40,7 @@ First thought might be `this.state.name = 'California'`, but this is dangerous. 
 ```
 updateName(newName) {
   this.setState({ 
-    name: newName 
+    name: newName
   })
 }
 ```

@@ -48,4 +48,4 @@ const stars = tweets.map((tweet) => tweet.stars) // [13,87,51,19]
 </ul>
 ```
 
-But keep in mind, React needs a unique **key** prop to each list item!! It will yell a t you if you forget, but it also helps React know which items change throughout different renders of the component.
+But keep in mind, React needs a unique **key** prop to each list item!! It will yell at you if you forget, but it also helps React know which items change throughout different renders of the component.
