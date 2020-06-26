@@ -59,3 +59,32 @@ The line `this.state.email` is how we grab the state in a controlled component. 
 
 
 What we can do instead of having React control the value, is have it live inside the DOM. React has a method called `createRef` that can make a DOM node for the `input` that is accessable.
+
+
+```
+class Form extends React.Component {
+  constructor(props) {
+    super(props)
+
+    this.input = React.createRef('')
+    this.handleSubmit = this.handleSubmit.bind(this)
+  }
+  handleSubmit() {
+    alert('The email is ' + this.input.current.value)
+  }
+  render() {
+    return (
+      <div>
+        <input
+          type='text'
+          placeholder='Email'
+          ref={this.input}
+        />
+        <button onClick={this.handleSubmit}>Submit</button>
+      </div>
+    )
+  }
+}
+```
+
+
